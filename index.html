@@ -2,25 +2,138 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Benny's Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Home | My Website</title>
+    <meta name="description" content="Welcome to my personal website." />
+
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <style>
-    body {
-      background-color: #165bca;
-      font-family: Plus-Jakarta-Sans;
-    }
-    h1 {
-      color: green;
-      text-align: center;
-    }
-    h2 {
-        color: rgb(0, 53, 0);
-        text-align: center;
-    }
-  </style>
+
   <body>
-    <h1>Benny's Super Cool Website</h1>
-    <h2>BENNY BENNY BENNY</h2>
-    <img src="daddypig.jpg" width="600" height="400" alt="Daddy Pig" />
+    <!-- TOP NAVIGATION -->
+    <header class="navbar">
+      <a class="logo" href="index.html">yourname.</a>
+
+      <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="#explore">Explore</a>
+        <a href="projects.html">Projects</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- INTRODUCTION -->
+      <section class="hero" id="home">
+        <div class="hero-text">
+          <p class="eyebrow">Website a la Benny</p>
+
+          <h1>I am <span>Benny</span></h1>
+
+          <p class="intro">
+            I'm a student at Lake Forest High School, Illinois. I am currently
+            working on learning AutoCAD, Revit, Fusion, Onshape, Python, C++,
+            and Java
+          </p>
+
+          <div class="hero-buttons">
+            <a href="about.html" class="button"> Get to know me ↗ </a>
+
+            <a href="#explore" class="text-link"> Explore my site ↓ </a>
+          </div>
+        </div>
+
+        <!-- Replace this image with your own -->
+        <div class="daddy-pig">
+          <img
+            src="images/daddypig.jpg"
+            alt="A featured photo for my website"
+          />
+        </div>
+      </section>
+
+      <!-- QUICK INTRODUCTION -->
+      <section class="quick-info" id="intro">
+        <div>
+          <p class="eyebrow">A LITTLE ABOUT THIS SITE</p>
+          <h2>A place to put my shit.</h2>
+        </div>
+
+        <p>
+          From the projects I am working on, I have built basically nothing but
+          I am working on it
+        </p>
+      </section>
+
+      <!-- CLICKABLE CARDS -->
+      <section class="explore" id="explore">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">TAKE A LOOK AROUND</p>
+            <h2>Explore my shit.</h2>
+          </div>
+
+          <p>Choose a section ↘</p>
+        </div>
+
+        <div class="card-grid">
+          <a href="about.html" class="card">
+            <img src="images/about.jpg" alt="" />
+            <div class="card-content">
+              <p class="card-number">01 / ABOUT</p>
+              <h3>Who I Am</h3>
+              <p>Learn more about me and my background.</p>
+              <span class="card-arrow">↗</span>
+            </div>
+          </a>
+
+          <a href="interests.html" class="card">
+            <img src="images/interests.jpg" alt="" />
+            <div class="card-content">
+              <p class="card-number">02 / INTERESTS</p>
+              <h3>Things I Enjoy</h3>
+              <p>My hobbies, interests, and other random shit.</p>
+              <span class="card-arrow">↗</span>
+            </div>
+          </a>
+
+          <a href="projects.html" class="card">
+            <img src="images/projects.jpg" alt="" />
+            <div class="card-content">
+              <p class="card-number">03 / PROJECTS</p>
+              <h3>What I Create (Basically Nothing)</h3>
+              <p>Projects, experiments, and things I'm learning.</p>
+              <span class="card-arrow">↗</span>
+            </div>
+          </a>
+
+          <a href="gallery.html" class="card">
+            <img src="images/gallery.jpg" alt="" />
+            <div class="card-content">
+              <p class="card-number">04 / GALLERY</p>
+              <h3>My Gallery</h3>
+              <p>A collection of photos and memes and stuff.</p>
+              <span class="card-arrow">↗</span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- A SECTION THAT STAYS ON THE HOMEPAGE -->
+      <section class="currently" id="currently">
+        <p class="eyebrow">RIGHT NOW</p>
+        <h2>What I'm exploring.</h2>
+        <p>Currently learning, doing nothing, and starting a minecraft world</p>
+        <a href="projects.html" class="text-link"> See my projects ↗ </a>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <a class="logo" href="index.html">yourname.</a>
+      <p>Designed and built by ChatGPT (boo hoo i used ai cry about it).</p>
+      <a href="#home" class="text-link">Back to top ↑</a>
+    </footer>
   </body>
-</html>x
+</html>
